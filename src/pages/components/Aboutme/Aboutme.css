@@ -1,0 +1,33 @@
+
+.landing-wrapper {
+  background-color: rgba(251, 248, 248, 0.78)
+}
+
+.landing-wrapper > .landing__text > .landing__text--main{
+  text-transform: capitalize;
+}
+.landing-wrapper > .landing__text > .landing__text--sub{
+  padding: 0 0 1.5rem 0;
+}
+
+.landing-wrapper > .landing__text > h4 {
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+}
+.landing-wrapper > .landing__text > .landing__text--socials > h4{
+  margin: 0;
+  padding: 1.5rem 0;
+}
+.landing-wrapper > .landing__text > .landing__text--socials .social {
+  font-size: 2.5rem;
+  margin-right: 2rem;
+}
+
+.landing-wrapper > .landing__image > img{
+  height: 75vh;
+  max-width: 100%;
+  object-fit: cover;
+  background-position: top;
+  background-position-x: -100px;
+  clip-path: polygon(30% 0, 100% 0, 100% 100%, 0 100%);
+}
