@@ -1,0 +1,12 @@
+.card{
+  text-align: center;
+  background:#FFF;
+  border-radius:0;
+  padding:2rem 0.5rem;
+}
+.card > .card__icon--container {
+  font-size: 5rem;
+}
+.card > .card__text{
+  margin:20px 0px;
+}

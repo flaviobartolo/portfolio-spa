@@ -4,6 +4,9 @@
 
 .technologies-wrapper__title {
   padding-top: 1rem;
-  border-top: 1px solid rgba(0,0,0,.1);
   text-align: center;
+}
+
+.technologies-wrapper__subtitle {
+  margin-top: 2rem;
 }
