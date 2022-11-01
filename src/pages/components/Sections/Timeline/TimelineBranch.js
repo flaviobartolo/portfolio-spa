@@ -8,6 +8,7 @@ const TimelineBranch = (props) => {
     <div className="content">
       <h5>{props.header}</h5>
       <p>{props.text}</p>
+      <p>{props.tech}</p>
     </div>
   </li>
 }

@@ -35,11 +35,12 @@
 }
 .timeline ul li .content h3{
   font-size: 1.5rem;
-  padding-top:0.5rem;
+  padding-top: 0.5rem;
 }
 .timeline ul li .content p{
-  padding:5px 0px 15px 0px;
-  font-size:15px;
+  padding: 0.4px 0px 15px 0px;
+  padding: 0.33rem 0 1rem 0;
+  font-size: 0.9rem;
 }
 .timeline ul li:before{
   position:absolute;
