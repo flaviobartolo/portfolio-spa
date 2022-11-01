@@ -14,9 +14,9 @@
   padding-top: 2rem;
   padding-bottom: 1rem;
 }
-.landing-wrapper > .landing__text > .landing__text--socials > h4{
+.landing-wrapper > .landing__text > .landing__text--socials > h5{
   margin: 0;
-  padding: 1.5rem 0;
+  padding: 1.5rem 0 1rem 0;
 }
 .landing-wrapper > .landing__text > .landing__text--socials .social {
   font-size: 2.5rem;
