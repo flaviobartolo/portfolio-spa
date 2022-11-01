@@ -1,4 +1,4 @@
-# Personal portfolio website
+# Portfolio website
 
 This is my personal portfolio website, it was created with ReactJs.
 
