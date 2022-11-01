@@ -2,7 +2,9 @@
 .landing-wrapper {
   background-color: rgba(251, 248, 248, 0.78)
 }
-
+.landing-wrapper > .landing__text {
+  padding-top: 2rem;
+}
 .landing-wrapper > .landing__text > .landing__text--main{
   text-transform: capitalize;
 }
