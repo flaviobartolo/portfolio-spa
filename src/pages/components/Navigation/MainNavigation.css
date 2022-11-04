@@ -24,6 +24,21 @@
 .main-navigation__title a {
   text-decoration: none;
   color: white;
+
+}
+
+.main-navigation__title a::after {
+  padding-top: 0.15rem;
+  content: '';
+  display: block;
+  width: 0;
+  height: 1px;
+  border-bottom: 1px solid white;
+  transition: width 0.3s;
+}
+
+.main-navigation__title a:hover::after {
+  width: 100%;
 }
 
 .main-navigation__header-nav {
