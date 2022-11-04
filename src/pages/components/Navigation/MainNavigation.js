@@ -1,4 +1,4 @@
-import React from 'react'
+import { React, useEffect } from 'react'
 import { Link } from 'react-router-dom'
 
 import MainHeader from './MainHeader'
@@ -6,6 +6,14 @@ import './MainNavigation.css'
 
 
 const MainNavigation = () => {
+
+  const goTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: 'smooth',
+    })
+  }
+
   return <>
     <MainHeader>
       <button className='main-navigation__menu-btn'>
@@ -13,11 +21,11 @@ const MainNavigation = () => {
         <span />
         <span />
       </button>
-      <h4 className="main-navigation__title">
-        <Link to='/'>FBartolo.dev</Link>
+      <h4 className='main-navigation__title'>
+        <Link to='/' onClick={goTop}>FBartolo.dev</Link>
       </h4>
       <nav className='main-navigation__header-nav'>
-        <ul className="nav-links">
+        <ul className='nav-links'>
           <li>
             A
           </li>

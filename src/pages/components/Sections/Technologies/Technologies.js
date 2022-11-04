@@ -10,7 +10,7 @@ import {BsHexagonFill} from 'react-icons/bs'
 import './Technologies.css'
 
 const Technologies = () => {
-  return <div class='technologies-wrapper row'>
+  return <div className='technologies-wrapper row'>
     <h1 className='technologies-wrapper__title section-line col-md-12'>Technologies and skills</h1>
     
     <h5 className='technologies-wrapper__subtitle col-md-12'>Javascript</h5>

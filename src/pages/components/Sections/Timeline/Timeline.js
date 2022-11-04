@@ -6,9 +6,9 @@ import './Timeline.css'
 
 
 const Timeline = () => {
-  return <div class='timeline-wrapper row'>
+  return <div className='timeline-wrapper row'>
     <h1 className='timeline-wrapper__title section-line col-md-12'>Timeline</h1>
-    <div class='row'>
+    <div className='row'>
       <div className='col-md-12'>
         <div className="timeline">
           <ul>
