@@ -16,20 +16,15 @@ const MainNavigation = () => {
 
   return <>
     <MainHeader>
-      <button className='main-navigation__menu-btn'>
-        <span />
-        <span />
-        <span />
-      </button>
       <h4 className='main-navigation__title'>
         <Link to='/' onClick={goTop}>FBartolo.dev</Link>
       </h4>
       <nav className='main-navigation__header-nav'>
-        <ul className='nav-links'>
-          <li>
+        <ul className='main-navigation__header-nav--links'>
+          <li className='main-navigation__header-nav--links-link'>
             A
           </li>
-          <li>
+          <li className='main-navigation__header-nav--links-link'>
             B
           </li>
         </ul>
