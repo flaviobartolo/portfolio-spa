@@ -44,7 +44,7 @@
 }
 
 .main-navigation-desktop__left-container, .main-navigation-desktop__right-container {
-  width: 10rem;
+  width: 12rem;
 }
 
 .main-navigation-desktop__left-container a{
@@ -53,6 +53,11 @@
 
 .main-navigation-desktop__right-container {
   text-align: right;
+}
+
+.main-navigation-desktop__title {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .underline-effect::after {
@@ -67,4 +72,13 @@
 
 .underline-effect:hover::after {
   width: 100%;
+}
+
+
+.main-navigation-desktop__theme ul{
+  justify-content: right;
+}
+
+.main-navigation-desktop__right-container ul li:last-child{
+  font-size: 1rem;
 }
