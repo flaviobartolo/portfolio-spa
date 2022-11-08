@@ -1,36 +1,66 @@
-import { React, useEffect } from 'react'
-import { Link } from 'react-router-dom'
+import React, { useState } from 'react'
 
-import MainHeader from './MainHeader'
+import { Link } from 'react-router-dom'
+import { RiMoonClearLine } from 'react-icons/ri'
+import { BsSun } from 'react-icons/bs'
+import { FaBars } from 'react-icons/fa'
+
 import './MainNavigation.css'
 
+const NavTest = () => {
 
-const MainNavigation = () => {
+  const [dayIcon, setDayIcon] = useState(true)
+  const [langPT, setLangPT] = useState(true)
+  const [showMobileMenu, setShowMobileMenu] = useState(false)
 
-  const goTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth',
-    })
+  const toggleDayNight = () => {
+    setDayIcon(!dayIcon)
   }
 
+  const toggleLang = () => {
+    setLangPT(!langPT)
+  }
+
+  const mobileMenuToggle = () => {
+    setShowMobileMenu(!showMobileMenu)
+    
+    console.log(showMobileMenu)
+  }
+  
   return <>
-    <MainHeader>
-      <h4 className='main-navigation__title'>
-        <Link to='/' onClick={goTop}>FBartolo.dev</Link>
+  <nav className='navigation'>
+    <div className='navigation__title--container'>
+      <h4 className='navigation__title'>
+        <Link className='underline-effect' to='/'>FBartolo.dev</Link>
       </h4>
-      <nav className='main-navigation__header-nav'>
-        <ul className='main-navigation__header-nav--links'>
-          <li className='main-navigation__header-nav--links-link'>
-            A
-          </li>
-          <li className='main-navigation__header-nav--links-link'>
-            B
-          </li>
-        </ul>
-      </nav>
-    </MainHeader>
+    </div>
+    <ul className={showMobileMenu ? 'nav-menu active' : 'nav-menu '}>
+      <li>
+        <Link>About Me</Link>
+      </li>
+      <li>
+        <Link>Skills</Link>
+      </li>
+      <li>
+        <Link>Timeline</Link>
+      </li>
+      <li>
+        <Link onClick={toggleLang}> 
+          {langPT ?  'PT' :  'EN' }
+        </Link>
+      </li>
+      <li>
+        <Link onClick={toggleDayNight}>
+          {dayIcon ?  <RiMoonClearLine /> :  <BsSun />}
+        </Link>
+      </li>
+    </ul>
+    <div className='mobile-icon'>
+      <FaBars onClick={mobileMenuToggle}/>
+    </div>
+  </nav>
   </>
+
 }
 
-export default MainNavigation
+export default NavTest
