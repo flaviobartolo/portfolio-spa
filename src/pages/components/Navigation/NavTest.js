@@ -23,8 +23,10 @@ const NavTest = () => {
 
   const mobileMenuToggle = () => {
     setShowMobileMenu(!showMobileMenu)
+    
+    console.log(showMobileMenu)
   }
-
+  
   return <>
   <nav className='navigation'>
     <div className='navigation__title--container'>
@@ -32,7 +34,7 @@ const NavTest = () => {
         <Link className='underline-effect' to='/'>FBartolo.dev</Link>
       </h4>
     </div>
-    <ul className='nav-menu active' style={ showMobileMenu ? {'display': 'block'} : {'display': 'none'}}>
+    <ul className={showMobileMenu ? 'nav-menu active' : 'nav-menu '}>
       <li>
         <Link>About Me</Link>
       </li>
