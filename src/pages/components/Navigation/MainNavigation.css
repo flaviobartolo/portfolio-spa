@@ -79,6 +79,12 @@
   display: block;
 }
 
+@media (max-width:992px) {
+  .container .landing-wrapper .landing__image {
+    display: none;
+  }
+}
+
 @media (max-width:900px) {
 
   .navigation {
@@ -106,6 +112,9 @@
   }
 
   .navigation__title--container {
+    width: 100%;
+  }
+  .navigation__title--container .navigation__title{
     width: 100%;
     padding: 1rem;
   }

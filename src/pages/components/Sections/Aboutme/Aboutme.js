@@ -5,7 +5,7 @@ import './Aboutme.css'
 
 const LandingPage = () => {
   return <div className='landing-wrapper row'>
-    <div className='landing__text col-md-6'>
+    <div className='landing__text col-lg-6'>
       <h1 className="landing__text--main">Hello,</h1>
       <h3 className="landing__text--sub">My name is Flávio, how are you?</h3>
       <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
@@ -20,7 +20,7 @@ const LandingPage = () => {
         <FaFileDownload className='social' style={{color: '#E50914'}}/>
       </div>
     </div>
-    <div className='landing__image col-md-6'>
+    <div className='landing__image col-lg-6'>
       <img src='/assets/LandingPage/laptop.jpg' alt="landing page image" className="landing__image" />
     </div>
   </div>
