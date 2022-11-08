@@ -21,7 +21,7 @@ const NavTest = () => {
     setLangPT(!langPT)
   }
 
-  const mobileHandler = () => {
+  const mobileMenuToggle = () => {
     setShowMobileMenu(!showMobileMenu)
   }
 
@@ -54,7 +54,7 @@ const NavTest = () => {
       </li>
     </ul>
     <div className='mobile-icon'>
-      <FaBars onClick={mobileHandler}/>
+      <FaBars onClick={mobileMenuToggle}/>
     </div>
   </nav>
   </>
