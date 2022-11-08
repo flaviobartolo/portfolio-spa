@@ -1,4 +1,4 @@
-.main-navigation-desktop {
+.navigation {
   margin: 0;
   z-index: 1;
   position: fixed;
@@ -12,50 +12,45 @@
   justify-content: space-between;
 }
 
-.main-navigation-desktop a {
+.navigation a {
   color: white;
 }
 
-.main-navigation-desktop h4 {
+.navigation h4 {
   margin: 0;
 }
 
-.main-navigation-desktop ul {
+.navigation ul.nav-menu {
   padding: 0;
   margin: 0;
   list-style: none;
-  display: flex;
-  justify-content: center;
 }
 
-.main-navigation-desktop ul li {
+.navigation ul.nav-menu li {
+  display: inline-block;
   padding: 1.5rem 1.5rem;
   margin: 0;
 }
 
-.main-navigation-desktop ul li:hover {
+.navigation ul li:hover {
   background-color: #5a5454;
   transition: background-color 0.2s ease-in;
 }
 
-.main-navigation-desktop ul li a {
+.navigation ul li a {
   display: inline-block;
   padding: 0 1rem;
 }
 
-.main-navigation-desktop__left-container, .main-navigation-desktop__right-container {
+.navigation__left-container, .navigation__right-container {
   width: 12rem;
 }
 
-.main-navigation-desktop__left-container a{
+.navigation__left-container a{
   display: inline-block;
 }
 
-.main-navigation-desktop__right-container {
-  text-align: right;
-}
-
-.main-navigation-desktop__title {
+.navigation__title {
   padding-left: 1.5rem;
   padding-right: 1.5rem;
 }
@@ -71,14 +66,46 @@
 }
 
 .underline-effect:hover::after {
+  color: white;
   width: 100%;
 }
 
-
-.main-navigation-desktop__theme ul{
-  justify-content: right;
+.navigation .mobile-icon {
+  display: none;
 }
 
-.main-navigation-desktop__right-container ul li:last-child{
-  font-size: 1rem;
+@media (max-width:900px) {
+
+  .navigation {
+    flex-direction: column;
+    padding: 0;
+  }
+
+  .navigation .mobile-icon {
+    display: block;
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+  }
+
+  .navigation ul.nav-menu {
+    padding-top: 1rem;
+    width: 100%;
+    text-align: center;
+    display: none;
+  }
+
+  .navigation ul.nav-menu li {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  .navigation__title--container {
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .underline-effect::after {
+    content: none;
+  }
 }

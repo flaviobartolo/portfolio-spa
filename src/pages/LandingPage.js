@@ -9,7 +9,7 @@ const LandingPage = () => {
     <>
       <Aboutme />
       <Technologies />
-      <Timeline />
+      {/*<Timeline />*/}
     </>
   )
 }
