@@ -36,6 +36,9 @@ const NavTest = () => {
         top: offsetPosition,
         behavior: 'smooth'
       })
+      if (window.screen.availWidth <= 900) {
+        mobileMenuToggle()
+      }
     }
   }
   

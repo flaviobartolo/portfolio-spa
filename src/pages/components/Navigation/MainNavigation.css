@@ -79,17 +79,6 @@
   display: block;
 }
 
-@media (max-width:992px) {
-
-  .container .landing-wrapper {
-    min-height: 100vh;
-  }
-
-  .container .landing-wrapper .landing__image {
-    display: none;
-  }
-}
-
 @media (max-width:900px) {
 
   .navigation {
