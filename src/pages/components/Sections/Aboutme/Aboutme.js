@@ -4,7 +4,7 @@ import {FaLinkedin, FaGithub, FaFileDownload} from 'react-icons/fa'
 import './Aboutme.css'
 
 const LandingPage = () => {
-  return <div className='landing-wrapper row'>
+  return <div className='landing-wrapper row' id='about'>
     <div className='landing__text col-lg-6'>
       <h1 className="landing__text--main">Hello,</h1>
       <h3 className="landing__text--sub">My name is Flávio, how are you?</h3>

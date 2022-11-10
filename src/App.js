@@ -1,4 +1,6 @@
-import { BrowserRouter as Router, Routes, Route, Navigate } from 'react-router-dom'
+import { useRef } from 'react'
+import { BrowserRouter as Router, Routes, Route, Navigate} from 'react-router-dom'
+
 
 import logo from './logo.svg'
 import './index.css'
@@ -9,6 +11,7 @@ import LandingPage from './pages/LandingPage'
 import Footer from './pages/components/Footer/Footer'
 
 const App = () => {
+
   return <Router>
     <MainNavigation />
     <div className='container'>

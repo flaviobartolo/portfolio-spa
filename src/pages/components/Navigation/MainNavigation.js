@@ -23,8 +23,20 @@ const NavTest = () => {
 
   const mobileMenuToggle = () => {
     setShowMobileMenu(!showMobileMenu)
-    
-    console.log(showMobileMenu)
+  }
+
+  const scrollHandler = (e, id) => {
+    e.preventDefault();
+    const el = document.getElementById(id)
+    const headerOffset = 65
+    const elementPosition = el.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    if (el) {
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      })
+    }
   }
   
   return <>
@@ -36,13 +48,13 @@ const NavTest = () => {
     </div>
     <ul className={showMobileMenu ? 'nav-menu active' : 'nav-menu '}>
       <li>
-        <Link>About Me</Link>
+        <Link onClick={(e) => scrollHandler(e, 'about')}>About Me</Link>
       </li>
       <li>
-        <Link>Skills</Link>
+        <Link onClick={(e) => scrollHandler(e, 'skills')}>Skills</Link>
       </li>
       <li>
-        <Link>Timeline</Link>
+        <Link onClick={(e) => scrollHandler(e, 'timeline')}>Timeline</Link>
       </li>
       <li>
         <Link onClick={toggleLang}> 
