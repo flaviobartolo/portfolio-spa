@@ -8,10 +8,10 @@ const LandingPage = () => {
     <div className='landing__text col-lg-6'>
       <h1 className="landing__text--main">Hello,</h1>
       <h3 className="landing__text--sub">My name is Flávio, how are you?</h3>
-      <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
-      <p>Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
-      <p>A small river named Duden flows by their place and supplies it with the necessary regelialia.</p>
-      <p>It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+      <p>I'm a full-stack software developer based in Aveiro, Portugal.</p>
+      <p>Currently working professionally as a python developer although lately im focused in getting to know more about the MERN ecosystem.</p>
+      <p>I work on different web projects in my free time in order to develop and learn new skills.</p>
+      <p>Beyond work, I love being outside and get to know new places.</p>
       <div className="landing__text--socials">
         <h5>Socials</h5>
         <FaLinkedin className='social' style={{color: '#0072b1'}}/>
