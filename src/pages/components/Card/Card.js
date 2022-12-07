@@ -4,7 +4,7 @@ import './Cards.css'
 
 const Card = (props) => {
 
-  return <div className='card'>
+  return <div className='card u-margin-bottom'>
     <div className='card__icon--container'>{props.icon}</div>
     <div className='card__title'>
       <h4>{props.title}</h4>
