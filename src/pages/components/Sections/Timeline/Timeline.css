@@ -68,6 +68,13 @@
   }
 }
 
+@media (max-width:600px){
+  .timeline{
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+  }
+}
+
 @media (max-width:300px){
   .timeline{
     width:100%;
